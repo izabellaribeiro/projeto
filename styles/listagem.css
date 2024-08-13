@@ -1,0 +1,72 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #e944ff;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo {
+    font-size: 24px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+.vacancy-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.vacancy-card {
+    width: 400px;
+    height: 150px;
+    background-color: #f0f0f0;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (min-width: 768px) { /* Defina a largura mínima para o modo desktop */
+    .vacancy-list {
+        justify-content: space-between; /* Distribui os cards igualmente na largura da tela */
+    }
+
+    .vacancy-card {
+        width: calc(50% - 20px); /* Calcula a largura de cada card para ocupar metade da largura da tela, subtraindo a margem */
+    }
+}
+

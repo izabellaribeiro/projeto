@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/index-style.css">
+
+    <title>Login</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Login</h1>
+        <p>Ainda não tem um registro? <a href="index.html">Clique aqui para criar uma conta</a></p>
+        <form>
+            <div class="form-group">
+                <label for="email" class="required">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="password" class="required">Senha:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button id="login-form" href="listagem-vagas.html">Fazer login</button>
+        </form>
+        <p>Esqueceu a senha? <a href="redefinicao-senha.html">Altere agora.</a></p>
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="./js/login.js"></script>
+</html>

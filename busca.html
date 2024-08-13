@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+
+  #header {
+    background-color: #f2f2f2;
+    padding: 10px;
+    text-align: center;
+  }
+
+  #form {
+    margin: 15px;
+  }
+
+  #form label {
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  #distancia {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+  }
+
+  #distancia input[type="radio"] {
+    margin-right: 5px;
+  }
+
+  #cep {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+  }
+
+  #continuar {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+  }
+
+  #form {
+  width: 300px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
+}
+
+#distancia {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 10px;
+  height: 30px;
+}
+
+#distancia label {
+  margin: 0;
+}
+
+#cep {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+#continuar {
+  background-color: #e944ff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 5px;
+}
+</style>
+</head>
+<body>
+  <div id="header">
+    <h1>Buscar Vagas</h1>
+  </div>
+  <div id="form">
+    <label for="distancia">DISTÂNCIA</label>
+    <div id="distancia">
+      <label for="distancia15">15 KM</label>
+      <input type="radio" id="distancia15" name="distancia" value="15">
+      <label for="distancia25">25 KM</label>
+      <input type="radio" id="distancia25" name="distancia" value="25">
+      <label for="distancia35">35 KM +</label>
+      <input type="radio" id="distancia35" name="distancia" value="35">
+    </div>
+    <label for="cep">INSIRA SEU CEP</label>
+    <input type="text" id="cep" name="cep" value="64570-000">
+    <button id="continuar">CONTINUAR</button>
+  </div>
+</body>
+</html>

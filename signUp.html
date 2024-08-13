@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/index-style.css">
+
+    <title>Registration</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Registro de Babá</h1>
+        <p>Já está registrado? <a href="login.html">Clique aqui para fazer login</a></p>
+        <form>
+            <div class="form-group">
+                <label for="fullname" class="required">Nome completo:</label>
+                <input type="text" id="fullname" name="fullname" required>
+            </div>
+            <div class="form-group">
+                <label for="email" class="required">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="password" class="required">Senha:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="form-group">
+                <label for="birthdate" class="required">Data de nascimento:</label>
+                <input type="date" id="birthdate" name="birthdate" required>
+            </div>
+            <button id="registration-form">CONTINUAR</button>
+        </form>
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="./js/server.js"></script>
+</html>
